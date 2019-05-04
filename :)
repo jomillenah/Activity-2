@@ -1,0 +1,116 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+
+int Month,Date,Year;
+
+cout<< "Please enter the following information :)" << endl;
+
+cout << "Birth month (from 1 to 12):";
+cin >> Month; 
+cout << "Birth date (from 1 to 31):";
+cin >> Date;
+cout << "Birth year:";
+cin >> Year;
+cout << endl;
+
+// MM/DD/YY
+switch (Month)
+	{
+		case 1: 
+		cout << "January " << Date << ", " << Year << endl; 
+		break; 
+		
+		case 2: 
+		 if (Month = 2 && Date> 28)
+			{
+				cout << "Invalid date! :("; 
+			}
+			
+		else
+			{
+			cout << "February " << Date << ", " << Year << endl; 
+			}		
+		break; 
+		
+		case 3: 
+		cout << "March " << Date << ", " << Year << endl; 
+		break;
+		
+		case 4: 
+			 if (Month = 4 && Date> 30)
+			{
+				cout << "Invalid date! :("; 
+			}
+			
+		else
+			{
+			cout << "April " << Date << ", " << Year << endl; 
+			}		
+		break; 
+		
+		case 5: 
+		cout << "May " << Date << ", " << Year << endl; 
+		break; 
+		
+		case 6: 
+			 if (Month = 6 && Date> 30)
+			{
+				cout << "Invalid date! :("; 
+			}
+			
+		else
+			{
+			cout << "June " << Date << ", " << Year << endl; 
+			}		
+		break; 
+		
+		case 7: 
+		cout << "July " << Date << ", " << Year << endl; 
+		break; 
+	
+		case 8: 
+		cout << "August " << Date << ", " << Year << endl; 
+		break;
+		
+		case 9: 
+			 if (Month = 9 && Date> 30)
+			{
+				cout << "Invalid date! :("; 
+			}
+			
+		else
+			{
+			cout << "September " << Date << ", " << Year << endl; 
+			}		
+		break;  	
+		
+		case 10: 
+		cout << "October " << Date << ", " << Year << endl; 
+		
+		case 11: 
+			 if (Month = 11 && Date> 30)
+			{
+				cout << "Invalid date! :("; 
+			}
+			
+		else
+			{
+			cout << "November " << Date << ", " << Year << endl; 
+			}		
+		break; 	
+		
+		case 12: 
+		cout << "December " << Date << ", " << Year << endl; 
+		break; 	
+		
+			
+	}
+
+_getch();
+return 0;
+
+}
